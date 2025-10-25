@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleBtn = document.getElementById('toggle-btn');
     const body = document.body;
     const buttonText = toggleBtn.querySelector('.button-text');
-    
+
     // Alternar entre Login e Cadastro
     toggleBtn.addEventListener('click', () => {
         body.classList.toggle('register-mode');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cpfInput = document.getElementById("cpf");
 
     if (cpfInput) {
-        cpfInput.addEventListener("input", function(e) {
+        cpfInput.addEventListener("input", function (e) {
             let value = e.target.value;
             value = value.replace(/\D/g, "");
             value = value.substring(0, 11);
@@ -64,14 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Conversão do Nome Completo para Maiúsculas ---
     const nomeCompletoInput = document.getElementById("nomeCompleto");
     if (nomeCompletoInput) {
-        nomeCompletoInput.addEventListener("input", function(e) {
+        nomeCompletoInput.addEventListener("input", function (e) {
             if (e.target.id === "nomeCompleto") {
                 e.target.value = e.target.value.toUpperCase();
             }
         });
     }
 
-    document.querySelector('#register-container form').addEventListener('submit', function(e) {
+    document.querySelector('#register-container form').addEventListener('submit', function (e) {
         const senha = document.getElementById('senha').value;
         const confirmSenha = document.getElementById('confirmSenha').value;
         if (senha !== confirmSenha) {
