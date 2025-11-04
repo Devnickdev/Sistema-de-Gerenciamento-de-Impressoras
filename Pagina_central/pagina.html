@@ -27,7 +27,7 @@
             <li><a href="#"><i class="fas fa-user-tie"></i> Emitente</a></li>
             <li><a href="#"><i class="fas fa-users"></i> Pessoas</a></li>
             <li><a href="#"><i class="fas fa-box"></i> Produtos</a></li>
-            <!-- <li><a href="#"><i class="fas fa-shopping-cart"></i> Vendas</a></li> -->
+            <li><a href="#"><i class="fas fa-print"></i> Vendas</a></li>
             <li><a href="#"><i class="fas fa-boxes"></i> Estoque</a></li>
             <li><a href="#"><i class="fas fa-dollar-sign"></i> Financeiro</a></li>
         </ul>
@@ -47,60 +47,64 @@
         </header>
 
         <section class="stats-cards">
-            <!--
+            
             <div class="card card-blue">
                 <div class="card-content">
                     <h2>66,00</h2>
-                    <p>Vendas Hoje</p>
+                    <p>Impressoras Online</p>
                     <span>Ticket Médio: 33.00 - Ref. 2 Venda(s)</span>
                 </div>
-                <i class="fas fa-shopping-cart card-icon"></i>
+                <i class="fas fa-print card-icon"></i>
             </div>
             <div class="card card-orange">
                 <div class="card-content">
                     <h2>68,00</h2>
-                    <p>Vendas (Período)</p>
+                    <p>Total de Paginas</p>
                     <span>Ticket Médio: 22.67 - Ref. 3 Venda(s)</span>
                 </div>
-                <i class="fas fa-chart-bar card-icon"></i>
+                <i class="fas fa-file-alt card-icon"></i>
             </div>
-            -->
+        
             <div class="card card-green">
                 <div class="card-content">
                     <h2>30,00</h2>
-                    <p>Receber Hoje</p>
+                    <p>Nível Baixo de Suprimento</p>
                     <span>Calendário</span>
                 </div>
-                <i class="fas fa-hand-holding-usd card-icon"></i>
+                <i class="fas fa-box card-icon"></i>
             </div>
             <div class="card card-red">
                 <div class="card-content">
                     <h2>30,00</h2>
-                    <p>Pagar Hoje</p>
+                    <p>Impressoras com Erro</p>
                     <span>Calendário</span>
                 </div>
-                <i class="fas fa-file-invoice-dollar card-icon"></i>
+                <i class="fas fa-exclamation-triangle card-icon"></i>
             </div>
         </section>
 
         <section class="data-widgets">
             <div class="widget client-list">
-                <h3>Cliente / Total</h3>
+                <h3>Status das Impressoras</h3>
                 <ul>
-                    <li><span>Cliente Modelo 1</span> <strong>32,00</strong><!-- <span class="status-ok">VENDA</span> --></li>
-                    <li><span>Cliente Modelo 2</span> <strong>34,00</strong><!-- <span class="status-ok">VENDA</span> --></li>
-                    <li><span>Cliente Modelo 1</span> <strong>2,00</strong><!-- <span class="status-ok">VENDA</span> --></li>
+                    <li><span>Cliente Modelo 1</span> <strong>32,00</strong> <span class="status-ok">VENDA</span> </li>
+                    <li><span>Cliente Modelo 2</span> <strong>34,00</strong> <span class="status-ok">VENDA</span> </li>
+                    <li><span>Cliente Modelo 1</span> <strong>2,00</strong> <span class="status-ok">VENDA</span> </li>
                 </ul>
             </div>
             
-            <!--
+        
             <div class="widget sales-chart">
-                <h3>Vendas (Diário)</h3>
+                <h3>Volume de Impressão (Últimos 7 dias)</h3>
                 <canvas id="dailySalesChart"></canvas>
             </div>
-            -->
+        
             
-            <div class="widget promo"></div>
+            <div class="widget promo">
+                <h3>Erros Recentes</h3>
+            
+
+            </div>
         </section>
     </main>
 
