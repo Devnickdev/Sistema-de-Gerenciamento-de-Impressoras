@@ -16,7 +16,7 @@ body {
 /* --- Menu Lateral (Sidebar) --- */
 .sidebar {
     width: 250px;
-    background: #13cae2 ; 
+    background: #13cae2;
     background-size: cover;
     background-blend-mode: multiply; /* Mistura a cor azul com a imagem */
     color: white;
@@ -27,35 +27,46 @@ body {
 }
 
 .sidebar-header {
-    padding: 20px;
     text-align: center;
-    background-color: rgba(26, 58, 99, 0.5); /* Fundo semi-transparente */
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+    
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    
+    /* Cor do texto para contrastar com o fundo branco */
+    color: #0c1e35; 
 }
 
 /* Campo de Busca no Menu */
 .sidebar-search {
     position: relative;
-    padding: 15px 20px;
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* Sombra mais sutil */
+    padding: 10px 20px; /* Ajusta o padding */
+    margin-bottom: 10px; /* Um pequeno espaço abaixo da busca */
 }
 .sidebar-search input {
     width: 100%;
-    padding: 10px 10px 10px 35px; /* Espaço para o ícone */
+    padding: 10px 10px 10px 35px;
     border-radius: 20px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
+    color: #333; /* Cor do texto digitado */
+    background-color: #f0f2f5; /* Fundo cinza claro para o input */
 }
 .sidebar-search input::placeholder {
-    color: #ccc;
+    color: #888; /* Cor do placeholder */
 }
 .sidebar-search .fa-search {
     position: absolute;
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
-    color: #ccc;
+    color: #888; /* Cor do ícone de busca */
 }
-
 
 .sidebar ul {
     list-style: none;
@@ -98,10 +109,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
     background-color: white;
     border-bottom: 1px solid #ddd;
     flex-shrink: 0;
+    height: 60px; /* Altura fixa (igual ao sidebar-header) */
+    padding: 0 20px; /* Remove padding vertical */
 }
 
 .top-header .header-left {
@@ -313,9 +325,9 @@ body.sidebar-collapsed .sidebar {
 
 /* Limita a altura máxima do widget do gráfico */
 .sales-chart {
-    max-height: 400px; /* Você pode ajustar esse valor */
-    min-height: 400px; /* Garante uma altura mínima */
-    padding-bottom: 40px; /* Adicione esta linha */
+    max-height: 400px;
+    min-height: 400px;
+    padding-bottom: 40px;
 }
 
 /* --- Estilos para o Widget de Log de Erros --- */
@@ -368,4 +380,10 @@ body.sidebar-collapsed .sidebar {
 }
 .log-message {
     color: #555;
+}
+
+.sidebar-header h3 {
+    margin: 0; /* Remove a margem do <h3> */
+    font-size: 1.2rem; /* Deixa o tamanho da fonte igual ao "Painel Central" */
+    color: #0c1e35; /* texto MonitorPrint ficar visível */
 }

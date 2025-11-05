@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Gestão Online</title>
+    <title>LocalizaEdu</title>
     
     <link rel="stylesheet" href="style.css">
     
@@ -15,7 +15,7 @@
 
     <nav class="sidebar">
         <div class="sidebar-header">
-            <h3>Menu</h3>
+            <h3>MonitorPrint</h3>
         </div>
         <div class="sidebar-search">
             <input type="text" placeholder="Procurar opção do menu...">
@@ -23,20 +23,19 @@
         </div>
         <ul>
             <li class="active"><a href="#"><i class="fas fa-home"></i> Painel</a></li>
-            <li><a href="#"><i class="fas fa-calendar-alt"></i> Agenda</a></li>
-            <li><a href="#"><i class="fas fa-user-tie"></i> Emitente</a></li>
-            <li><a href="#"><i class="fas fa-users"></i> Pessoas</a></li>
-            <li><a href="#"><i class="fas fa-box"></i> Produtos</a></li>
-            <li><a href="#"><i class="fas fa-print"></i> Vendas</a></li>
-            <li><a href="#"><i class="fas fa-boxes"></i> Estoque</a></li>
-            <li><a href="#"><i class="fas fa-dollar-sign"></i> Financeiro</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i> Manutenções</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> Usuários</a></li>
+            <li><a href="#"><i class="fas fa-print"></i> Impressoras</a></li>
+            <li><a href="#"><i class="fas fa-chart-pie"></i> Relatórios</a></li>
+            <li><a href="#"><i class="fas fa-box"></i> Suprimentos</a></li>
+            <li><a href="#"><i class="fas fa-dollar-sign"></i> Custos</a></li>
         </ul>
     </nav>
 
     <main class="main-content">
         <header class="top-header">
             <div class="header-left">
-                <i classs="fas fa-bars menu-toggle"></i>
+                <i class="fas fa-bars menu-toggle"></i>
                 <span>Painel Central</span>
             </div>
             <div class="header-right">
@@ -46,76 +45,79 @@
             </div>
         </header>
 
-       <section class="stats-cards">
-    
-    <div class="card card-blue">
-        <div class="card-content">
-            <h2>8</h2> <p>Impressoras Online</p>
-            <span>Total de 10 cadastradas</span>
-        </div>
-        <i class="fas fa-print card-icon"></i> </div>
-    
-    <div class="card card-orange">
-        <div class="card-content">
-            <h2>12.450</h2> <p>Total de Páginas</p>
-            <span>Consumo no mês atual</span>
-        </div>
-        <i class="fas fa-file-alt card-icon"></i> </div>
-    
-    <div class="card card-green">
-        <div class="card-content">
-            <h2>3</h2> <p>Nível Baixo de Suprimento</p>
-            <span>Impressoras precisando de toner</span>
-        </div>
-        <i class="fas fa-tint card-icon"></i> </div>
-    
-    <div class="card card-red">
-        <div class="card-content">
-            <h2>1</h2> <p>Impressoras com Erro</p>
-            <span>1 offline / 0 com atolamento</span>
-        </div>
-        <i class="fas fa-exclamation-triangle card-icon"></i> </div>
-    
-</section>
+        <section class="stats-cards">
+            <div class="card card-blue">
+                <div class="card-content">
+                    <h2>8</h2>
+                    <p>Impressoras Online</p>
+                    <span>Total de 10 cadastradas</span>
+                </div>
+                <i class="fas fa-print card-icon"></i>
+            </div>
+            <div class="card card-orange">
+                <div class="card-content">
+                    <h2>12.450</h2>
+                    <p>Total de Páginas</p>
+                    <span>Consumo no mês atual</span>
+                </div>
+                <i class="fas fa-file-alt card-icon"></i>
+            </div>
+            <div class="card card-green">
+                <div class="card-content">
+                    <h2>3</h2>
+                    <p>Nível Baixo de Suprimento</p>
+                    <span>Impressoras precisando de toner</span>
+                </div>
+                <i class="fas fa-tint card-icon"></i>
+            </div>
+            <div class="card card-red">
+                <div class="card-content">
+                    <h2>1</h2>
+                    <p>Impressoras com Erro</p>
+                    <span>1 offline / 0 com atolamento</span>
+                </div>
+                <i class="fas fa-exclamation-triangle card-icon"></i>
+            </div>
+        </section>
 
         <section class="data-widgets">
-           <div class="widget printer-status-list">
-    <h3>Status das Impressoras</h3>
-    <ul>
-        <li>
-            <span class="status-dot online"></span>
-            <span class="printer-name">HP</span>
-            <div class="progress-bar-container">
-                <div class="progress-bar" style="width: 80%;"></div>
+            <div class="widget printer-status-list">
+                <h3>Status das Impressoras</h3>
+                <ul>
+                    <li>
+                        <span class="status-dot online"></span>
+                        <span class="printer-name">HP</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                        <span class="status-text">Online</span>
+                    </li>
+                    <li>
+                        <span class="status-dot warning"></span>
+                        <span class="printer-name">Epson</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 20%;"></div>
+                        </div>
+                        <span class="status-text">Toner Baixo</span>
+                    </li>
+                    <li>
+                        <span class="status-dot offline"></span>
+                        <span class="printer-name">Brother</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 0%;"></div>
+                        </div>
+                        <span class="status-text">Offline</span>
+                    </li>
+                    <li>
+                        <span class="status-dot online"></span>
+                        <span class="printer-name">HP</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <span class="status-text">Online</span>
+                    </li>
+                </ul>
             </div>
-            <span class="status-text">Online</span>
-        </li>
-        <li>
-            <span class="status-dot warning"></span>
-            <span class="printer-name">Epson</span>
-            <div class="progress-bar-container">
-                <div class="progress-bar" style="width: 20%;"></div>
-            </div>
-            <span class="status-text">Toner Baixo</span>
-        </li>
-        <li>
-            <span class="status-dot offline"></span>
-            <span class="printer-name">Brother</span>
-            <div class="progress-bar-container">
-                <div class="progress-bar" style="width: 0%;"></div>
-            </div>
-            <span class="status-text">Offline</span>
-        </li>
-        <li>
-            <span class="status-dot online"></span>
-            <span class="printer-name">HP</span>
-            <div class="progress-bar-container">
-                <div class="progress-bar" style="width: 65%;"></div>
-            </div>
-            <span class="status-text">Online</span>
-        </li>
-    </ul>
-</div>
             
         
             <div class="widget sales-chart">
@@ -124,39 +126,39 @@
             </div>
         
             <div class="widget error-log-list">
-    <h3>Log de Erros Recentes</h3>
-    <ul>
-        <li>
-            <i class="fas fa-exclamation-triangle log-icon error"></i>
-            <span class="log-time">[14:30]</span>
-            <strong class="log-printer">HP:</strong>
-            <span class="log-message">Atolamento de Papel</span>
-        </li>
-        <li>
-            <i class="fas fa-plug log-icon offline"></i>
-            <span class="log-time">[09:15]</span>
-            <strong class="log-printer">Brother:</strong>
-            <span class="log-message">Offline</span>
-        </li>
-        <li>
-            <i class="fas fa-tint log-icon warning"></i>
-            <span class="log-time">[Ontem 18:00]</span>
-            <strong class="log-printer">Epson:</strong>
-            <span class="log-message">Toner Baixo</span>
-        </li>
-        <li>
-            <i class="fas fa-plug log-icon offline"></i>
-            <span class="log-time">[Ontem 17:30]</span>
-            <strong class="log-printer">Brother:</strong>
-            <span class="log-message">Offline</span>
-        </li>
-         <li>
-            <i class="fas fa-exclamation-triangle log-icon error"></i>
-            <span class="log-time">[Ontem 15:00]</span>
-            <strong class="log-printer">HP:</span>
-        </li>
-    </ul>
-</div>
+                <h3>Log de Erros Recentes</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-exclamation-triangle log-icon error"></i>
+                        <span class="log-time">[14:30]</span>
+                        <strong class="log-printer">HP:</strong>
+                        <span class="log-message">Atolamento de Papel</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-plug log-icon offline"></i>
+                        <span class="log-time">[09:15]</span>
+                        <strong class="log-printer">Brother:</strong>
+                        <span class="log-message">Offline</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-tint log-icon warning"></i>
+                        <span class="log-time">[Ontem 18:00]</span>
+                        <strong class="log-printer">Epson:</strong>
+                        <span class="log-message">Toner Baixo</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-plug log-icon offline"></i>
+                        <span class="log-time">[Ontem 17:30]</span>
+                        <strong class="log-printer">Brother:</strong>
+                        <span class="log-message">Offline</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-exclamation-triangle log-icon error"></i>
+                        <span class="log-time">[Ontem 15:00]</span>
+                        <strong class="log-printer">HP:</strong>
+                    </li>
+                </ul>
+            </div>
            
         </section>
     </main>
