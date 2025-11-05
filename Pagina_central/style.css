@@ -36,9 +36,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 20px;
-    
     /* Cor do texto para contrastar com o fundo branco */
     color: #0c1e35; 
+    border-right: 1px solid #e0e0e0; 
 }
 
 /* Campo de Busca no Menu */
